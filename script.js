@@ -54,7 +54,8 @@ let users = [
     "address": "314 Dunne Place, Bawcomville, Guam, 9053"
     }
     ]
-   
+
+    
 const phones = users.filter(user => Number(user.balance.replace(/[^0-9.-]+/g,"")) > 2000)
 .map(user => user.phone);
 console.log(phones);
